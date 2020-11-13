@@ -1,0 +1,103 @@
+.App {
+  text-align: center;
+  
+}
+body{
+  font-family: "Nunito Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+
+}
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+#navbar{
+  background-color: black;
+  padding: 20px;
+}
+#navbar_title{
+  padding-left: 50px;
+}
+#jt1{
+  background-color: #f7f7f9;
+  
+}
+#search_box{
+  background-color: #f7f7f9;
+}
+#search_text{
+  text-transform: uppercase;
+    letter-spacing: 3px;
+}
+#search_movies{
+  background-color:  #f7f7f9;
+  border-color:  #f7f7f9;
+ 
+}
+/* #search_col{
+  margin-left: 100px;
+} */
+#poster{
+  
+  height:250px;
+  width: 250px;
+}
+#movie_block:hover #poster{
+  
+  height:300px;
+  width: 300px;
+  
+}
+#movie_block:hover #movie_title{
+  width: 300px;
+  background-color: black;
+  color: white;
+  display: block;
+}
+
+#movie_title{
+  width: 250px;
+  background-color: black;
+  color: white;
+  display: none;
+  
+}
+
+#txt-white{
+  color: white;
+  text-decoration: none;
+}
+
+
+
+
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
