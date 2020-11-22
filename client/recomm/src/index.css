@@ -1,0 +1,89 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+
+#body{
+  margin: 0;
+  
+}
+#movie_details{
+  margin: 0;
+}
+#navbar{
+  background-color: black;
+  padding: 20px;
+}
+#s1{
+  font-size: 20px;
+}
+#navbar_title{
+  padding-left: 50px;
+}
+#bg-black{
+  background-color: black;
+  text-align: center;
+   
+}
+#m-0{
+    margin: 0px;
+}
+#movie_poster{
+    width: 400px;
+    height:auto;
+}
+.txt{
+ 
+  color: white;
+}
+.list-group{
+  text-align: left;
+}
+
+
+#recomm_poster{
+  width: 200px;
+  height: 200px;
+}
+
+
+#movie_block:hover #recomm_poster{
+  
+  height:200px;
+  width: 200px;
+  
+}
+#movie_block:hover #movie_title{
+  width: 200px;
+  background-color: black;
+  color: white;
+  display: block;
+}
+
+#movie_title{
+  width: 200px;
+  background-color: black;
+  color: white;
+  display: none;
+  
+}
+#txt-white{
+  color: white;
+  text-decoration: none;
+}
+#quantity{
+  width: 200px;
+}
+#quantity-txt{
+  font-size: large;
+}

@@ -14,6 +14,8 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use('/api',require('./routes/api'));
 app.use('/search',express.static('./client/search/build'));
 app.use('/movie',express.static('./client/movie/build'));
+app.use('/myrecomm',express.static('./client/recomm/build'));
+
 
 
 app.get('/search',function(req,res){
@@ -22,6 +24,10 @@ app.get('/search',function(req,res){
 
 app.get('/movie',function(req,res){
     res.sendFile(path.join(__dirname,'/client/movie/build/index.html'));
+})
+
+app.get('/myrecomm',function(req,res){
+    res.sendFile(path.join(__dirname,'/client/recomm/build/index.html'));
 })
 
 const PORT = process.env.PORT || 5000;

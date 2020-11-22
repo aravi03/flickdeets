@@ -11,6 +11,22 @@ router.get('/getrecom/:id',function(req,res){
             })
 })
 
+router.get('/myrecomm',function(req,res){
+
+   var MongoClient = require('mongodb').MongoClient;
+   MongoClient.connect('mongodb://localhost:27017').then(function(client)
+       {
+           var db=client.db('flickdeets');
+           var collection=db.collection("recomm");
+           return collection.find({}).sort({"score":-1}).limit( 20 ).toArray();
+           
+       }).then((items)=>{
+        res.send(items);
+       })
+
+})
+
+
 router.post('/rate',function(req,res){
    var recomm = {
       id:req.body.id,

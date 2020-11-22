@@ -18,10 +18,10 @@ export default class navbar extends Component {
                         </a>
                     </li>
                     <li class="nav-item mx-2">
-                        <a class="nav-link" href="/login">Login</a>
+                        <a class="nav-link" href="/search"><i id='s1' class="fa fa-search"></i></a>
                     </li>
                     <li class="nav-item mx-2">
-                        <a class="nav-link" href="/register">Register</a>
+                        <a class="nav-link" href="/myrecomm"><i id='s1' class="fa fa-home"></i></a>
                     </li>
                 </ul>
             </div>
